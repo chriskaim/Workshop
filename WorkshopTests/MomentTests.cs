@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WorkshopCsharp;
+using Workshop;
 
-namespace WorkshopCsharpTests
+namespace WorkshopTests
 {
     [TestClass]
     public class MomentTests

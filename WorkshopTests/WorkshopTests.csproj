@@ -56,7 +56,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\WorkshopCsharp\Workshop.csproj">
+    <ProjectReference Include="..\Workshop\Workshop.csproj">
       <Project>{a2bd9ff6-bbad-4ba1-9c6d-b8b5ec571e13}</Project>
       <Name>Workshop</Name>
     </ProjectReference>

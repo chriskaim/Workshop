@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 
-namespace WorkshopCsharp
+namespace Workshop
 {
     public struct Moment : IEquatable<Moment>, IComparable<Moment>
     {
