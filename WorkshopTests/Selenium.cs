@@ -23,11 +23,11 @@ namespace SeleniumTests
             IWebElement password = driver.FindElement(By.XPath("//input[contains(@id, 'wpPassword1')]"));
 
             username.Clear();
-            username.SendKeys("SeleniumTests");
+            username.SendKeys("Existing user");
             Assert.IsTrue(username.Displayed);
 
             password.Clear();
-            password.SendKeys("Selenium123");
+            password.SendKeys("Existing password");
             Assert.IsTrue(password.Displayed);
 
             driver.FindElement(By.Id("wpLoginAttempt")).Click();
@@ -44,11 +44,11 @@ namespace SeleniumTests
             IWebElement password = driver.FindElement(By.XPath("//input[contains(@id, 'wpPassword1')]"));
 
             username.Clear();
-            username.SendKeys("fake@email.com");
+            username.SendKeys("Fake user");
             Assert.IsTrue(username.Displayed);
 
             password.Clear();
-            password.SendKeys("fake_password");
+            password.SendKeys("Fake password");
             Assert.IsTrue(password.Displayed);
 
             driver.FindElement(By.Id("wpLoginAttempt")).Click();
