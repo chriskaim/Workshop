@@ -24,11 +24,9 @@ namespace SeleniumTests
 
             username.Clear();
             username.SendKeys("Existing user");
-            Assert.IsTrue(username.Displayed);
 
             password.Clear();
             password.SendKeys("Existing password");
-            Assert.IsTrue(password.Displayed);
 
             driver.FindElement(By.Id("wpLoginAttempt")).Click();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(1);
@@ -45,11 +43,9 @@ namespace SeleniumTests
 
             username.Clear();
             username.SendKeys("Fake user");
-            Assert.IsTrue(username.Displayed);
 
             password.Clear();
             password.SendKeys("Fake password");
-            Assert.IsTrue(password.Displayed);
 
             driver.FindElement(By.Id("wpLoginAttempt")).Click();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(1);
