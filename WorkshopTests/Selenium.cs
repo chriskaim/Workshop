@@ -31,7 +31,9 @@ namespace SeleniumTests
             driver.FindElement(By.Id("wpLoginAttempt")).Click();
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(1);
             IWebElement body = driver.FindElement(By.TagName("body"));
-            Assert.IsTrue(body.Text.Contains("SeleniumTests"));
+            Assert.IsTrue(body.Text.Contains("Existing User"));
+
+            //Repo is public, replace user or password with real parameters and it'll work
         }
 
         [Test]
